@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  gap: 0 5px;
+  grid-template: auto / repeat(4, 25%);
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    grid-template: auto / repeat(3, 33.33%);
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    grid-template: auto / repeat(2, 50%);
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    grid-template: auto / repeat(1, 100%);
+  }
+}
+.box-item {
+  margin: 20px 15px;
+}
